@@ -1,0 +1,354 @@
+RecordID,Address,City,State,Zip,Country,Latitude,Longitude
+1,515 E Peltason Dr,Irvine,CA,92617,United States,-117.836949,33.643558
+2,4 Alcott Ct,Irvine,CA,92617,United States,-117.84119,33.640281
+3,16 Joyce Ct,Irvine,CA,92617,United States,-117.841237,33.634865
+4,11 Murasaki St,Irvine,CA,92617,United States,-117.835357,33.640612
+5,10 Whistler Ct,Irvine,CA,92617,United States,-117.840356,33.63531
+6,25 Harvey Ct,Irvine,CA,92617,United States,-117.842585,33.636327
+7,18 Murasaki St,Irvine,CA,92617,United States,-117.834393,33.640458
+8,20 Newton Ct,Irvine,CA,92617,United States,-117.839466,33.638977
+9,26 McClintock Ct,Irvine,CA,92617,United States,-117.840598,33.634737
+10,4 Gibbs Ct,Irvine,CA,92617,United States,-117.843662,33.638341
+11,26 Whistler Ct,Irvine,CA,92617,United States,-117.840358,33.635752
+12,20 Whitman Ct,Irvine,CA,92617,United States,-117.84119,33.636468
+13,16 Whitman Ct,Irvine,CA,92617,United States,-117.84097,33.636605
+14,22 Young,Irvine,CA,92617,United States,-117.8411,33.63723
+15,21 Harvey Ct,Irvine,CA,92617,United States,-117.842301,33.636428
+16,40 Gabrielino Dr,Irvine,CA,92617,United States,-117.83609,33.64051
+17,14 Gibbs Ct,Irvine,CA,92617,United States,-117.842589,33.638117
+18,67 Whitman Ct,Irvine,CA,92617,United States,-117.83838,33.63709
+19,26 Young,Irvine,CA,92617,United States,-117.841434,33.637012
+20,20 Alcott Ct,Irvine,CA,92617,United States,-117.84123,33.639621
+21,7 Gibbs Ct,Irvine,CA,92617,United States,-117.844046,33.638614
+22,10 Fuertes,Irvine,CA,92617,United States,-117.834426,33.639806
+23,17 Harvey Ct,Irvine,CA,92617,United States,-117.842535,33.636543
+24,3 Alcott Ct,Irvine,CA,92617,United States,-117.841697,33.639908
+25,24 Alcott Ct,Irvine,CA,92617,United States,-117.841373,33.639556
+26,30 Perkins Ct,Irvine,CA,92617,United States,-117.838576,33.639792
+27,1 Virgil Ct,Irvine,CA,92617,United States,-117.838064,33.637975
+28,29 Murasaki St,Irvine,CA,92617,United States,-117.833645,33.639701
+29,21 Murasaki St,Irvine,CA,92617,United States,-117.834499,33.640073
+30,7 Virgil Ct,Irvine,CA,92617,United States,-117.837743,33.638285
+31,55 Schubert Ct,Irvine,CA,92617,United States,-117.837954,33.64208
+32,6 Fuertes,Irvine,CA,92617,United States,-117.83483,33.63991
+33,73 Whitman Ct,Irvine,CA,92617,United States,-117.83791,33.636738
+34,5 Owen Ct,Irvine,CA,92617,United States,-117.8384,33.639013
+35,60 Whitman Ct,Irvine,CA,92617,United States,-117.83909,33.63651
+36,14 Joyce Ct,Irvine,CA,92617,United States,-117.841403,33.63481
+37,4 Virgil Ct,Irvine,CA,92617,United States,-117.83845,33.638322
+38,14 Dickens Ct,Irvine,CA,92617,United States,-117.8425,33.639089
+39,6 Gibbs Ct,Irvine,CA,92617,United States,-117.843665,33.638563
+40,19 Dickens Ct,Irvine,CA,92617,United States,-117.842418,33.638577
+41,8 Blake Ct,Irvine,CA,92617,United States,-117.842073,33.640476
+42,12 Blake Ct,Irvine,CA,92617,United States,-117.842337,33.64043
+43,10 Thompson Ct,Irvine,CA,92617,United States,-117.839544,33.64077
+44,38 Gabrielino Dr,Irvine,CA,92617,United States,-117.83601,33.64056
+45,12 Handel Ct,Irvine,CA,92617,United States,-117.841817,33.63508
+46,3 Twain,Irvine,CA,92617,United States,-117.835542,33.6403
+47,14 Russell Ct,Irvine,CA,92617,United States,-117.839612,33.64155
+48,5 Murasaki St,Irvine,CA,92617,United States,-117.835914,33.64085
+49,1 Zola Ct,Irvine,CA,92617,United States,-117.837585,33.637258
+50,2 Owen Ct,Irvine,CA,92617,United States,-117.839053,33.639215
+51,7 Dickens Ct,Irvine,CA,92617,United States,-117.843644,33.639194
+52,11 Fuertes,Irvine,CA,92617,United States,-117.834595,33.639445
+53,18 Alcott Ct,Irvine,CA,92617,United States,-117.841212,33.639661
+54,127 Schubert Ct,Irvine,CA,92617,United States,-117.83982,33.64189
+55,19 Murasaki St,Irvine,CA,92617,United States,-117.834682,33.640148
+56,1 Alcott Ct,Irvine,CA,92617,United States,-117.841692,33.639948
+57,31 Murasaki St,Irvine,CA,92617,United States,-117.833484,33.639597
+58,99 Schubert Ct,Irvine,CA,92617,United States,-117.8393,33.64239
+59,8 Virgil Ct,Irvine,CA,92617,United States,-117.838244,33.638501
+60,125 Schubert Ct,Irvine,CA,92617,United States,-117.839883,33.641885
+61,12 Curie Ct,Irvine,CA,92617,United States,-117.842388,33.639571
+62,57 Schubert Ct,Irvine,CA,92617,United States,-117.838038,33.642108
+63,11 Virgil Ct,Irvine,CA,92617,United States,-117.837462,33.63837
+64,103 Schubert Ct,Irvine,CA,92617,United States,-117.83924,33.64238
+65,24 Perkins Ct,Irvine,CA,92617,United States,-117.839154,33.639675
+66,93 Schubert Ct,Irvine,CA,92617,United States,-117.83937,33.6424
+67,22 McClintock Ct,Irvine,CA,92617,United States,-117.840801,33.634642
+68,81 Schubert Ct,Irvine,CA,92617,United States,-117.83894,33.64221
+69,48 Schubert Ct,Irvine,CA,92617,United States,-117.838194,33.641811
+70,16 Eliot Ct,Irvine,CA,92617,United States,-117.841679,33.635578
+71,24 Russell Ct,Irvine,CA,92617,United States,-117.840073,33.641096
+72,12 Frost,Irvine,CA,92617,United States,-117.834733,33.639252
+73,14 Thompson Ct,Irvine,CA,92617,United States,-117.839858,33.640602
+74,14 Murasaki St,Irvine,CA,92617,United States,-117.834708,33.640647
+75,1 Twain,Irvine,CA,92617,United States,-117.8355,33.640466
+76,1 Murasaki St,Irvine,CA,92617,United States,-117.836182,33.641076
+77,23 Murasaki St,Irvine,CA,92617,United States,-117.834306,33.639996
+78,18 Fuertes,Irvine,CA,92617,United States,-117.833795,33.639515
+79,12 Dickens Ct,Irvine,CA,92617,United States,-117.842658,33.639141
+80,12 Joyce Ct,Irvine,CA,92617,United States,-117.841576,33.634771
+81,24 Harvey Ct,Irvine,CA,92617,United States,-117.842024,33.636726
+82,22 Perkins Ct,Irvine,CA,92617,United States,-117.839387,33.639751
+83,18 Joyce Ct,Irvine,CA,92617,United States,-117.84108,33.634955
+84,5 Dickens Ct,Irvine,CA,92617,United States,-117.843503,33.639111
+85,34 Gabrielino Dr,Irvine,CA,92617,United States,-117.836063,33.640525
+86,8 Owen Ct,Irvine,CA,92617,United States,-117.838621,33.639411
+87,61 Schubert Ct,Irvine,CA,92617,United States,-117.83852,33.64214
+88,24 Mendel Ct,Irvine,CA,92617,United States,-117.839876,33.639662
+89,14 Eliot Ct,Irvine,CA,92617,United States,-117.841841,33.635504
+90,12 Owen Ct,Irvine,CA,92617,United States,-117.838302,33.639503
+91,20 Perkins Ct,Irvine,CA,92617,United States,-117.83947,33.639921
+92,22 Whistler Ct,Irvine,CA,92617,United States,-117.840657,33.635672
+93,77 Whitman Ct,Irvine,CA,92617,United States,-117.83814,33.63642
+94,14 Newton Ct,Irvine,CA,92617,United States,-117.839799,33.639063
+95,26 Los Trancos Dr,Irvine,CA,92617,United States,-117.842969,33.637544
+96,2 Urey Ct,Irvine,CA,92617,United States,-117.839029,33.638296
+97,6 Perkins Ct,Irvine,CA,92617,United States,-117.838357,33.640125
+98,5 Whistler Ct,Irvine,CA,92617,United States,-117.839979,33.635412
+99,5 Alcott Ct,Irvine,CA,92617,United States,-117.841738,33.63984
+100,16 Harvey Ct,Irvine,CA,92617,United States,-117.842645,33.636944
+101,8 Thompson Ct,Irvine,CA,92617,United States,-117.839366,33.64076
+102,6 Alcott Ct,Irvine,CA,92617,United States,-117.841159,33.640211
+103,15 Virgil Ct,Irvine,CA,92617,United States,-117.837325,33.638428
+104,2 Twain,Irvine,CA,92617,United States,-117.835006,33.640393
+105,28 Young,Irvine,CA,92617,United States,-117.841373,33.636843
+106,6 Dickens Ct,Irvine,CA,92617,United States,-117.843268,33.639555
+107,15 Zola Ct,Irvine,CA,92617,United States,-117.836895,33.637793
+108,27 Harvey Ct,Irvine,CA,92617,United States,-117.842528,33.636201
+109,7 Owen Ct,Irvine,CA,92617,United States,-117.838237,33.639067
+110,10 Russell Ct,Irvine,CA,92617,United States,-117.83925,33.641551
+111,10 McClintock Ct,Irvine,CA,92617,United States,-117.841262,33.63447
+112,17 Fuertes,Irvine,CA,92617,United States,-117.834096,33.639224
+113,139 Schubert Ct,Irvine,CA,92617,United States,-117.8399,33.64182
+114,109 Schubert Ct,Irvine,CA,92617,United States,-117.83976,33.64217
+115,9 Zola Ct,Irvine,CA,92617,United States,-117.837126,33.6376
+116,15 Harvey Ct,Irvine,CA,92617,United States,-117.842675,33.636577
+117,7 Fuertes,Irvine,CA,92617,United States,-117.834942,33.63955
+118,14 Whistler Ct,Irvine,CA,92617,United States,-117.840643,33.635174
+119,76 Whitman Ct,Irvine,CA,92617,United States,-117.83806,33.63647
+120,18 Virgil Ct,Irvine,CA,92617,United States,-117.837564,33.638769
+121,24 Dickens Ct,Irvine,CA,92617,United States,-117.841922,33.638496
+122,6 Virgil Ct,Irvine,CA,92617,United States,-117.838383,33.638435
+123,18 Dickens Ct,Irvine,CA,92617,United States,-117.842192,33.638931
+124,18 Whitman Ct,Irvine,CA,92617,United States,-117.840105,33.636851
+125,11 Dickens Ct,Irvine,CA,92617,United States,-117.842919,33.638764
+126,18 Perkins Ct,Irvine,CA,92617,United States,-117.839422,33.640108
+127,2 Gibbs Ct,Irvine,CA,92617,United States,-117.843693,33.638153
+128,44 Schubert Ct,Irvine,CA,92617,United States,-117.838209,33.641665
+129,16 Handel Ct,Irvine,CA,92617,United States,-117.841495,33.635196
+130,3 Murasaki St,Irvine,CA,92617,United States,-117.836064,33.640935
+131,131 Schubert Ct,Irvine,CA,92617,United States,-117.83982,33.64181
+132,20 Fuertes,Irvine,CA,92617,United States,-117.83366,33.639435
+133,5 Zola Ct,Irvine,CA,92617,United States,-117.837313,33.637377
+134,16 Frost,Irvine,CA,92617,United States,-117.834418,33.639131
+135,9 Murasaki St,Irvine,CA,92617,United States,-117.835533,33.640723
+136,17 Murasaki St,Irvine,CA,92617,United States,-117.834869,33.640222
+137,25 Whistler Ct,Irvine,CA,92617,United States,-117.840203,33.635782
+138,1 Russell Ct,Irvine,CA,92617,United States,-117.838796,33.641087
+139,28 Urey Ct,Irvine,CA,92617,United States,-117.841324,33.637571
+140,14 Handel Ct,Irvine,CA,92617,United States,-117.841656,33.63514
+141,6 Frost,Irvine,CA,92617,United States,-117.83529,33.63935
+142,10 Twain,Irvine,CA,92617,United States,-117.835407,33.639562
+143,3 Owen Ct,Irvine,CA,92617,United States,-117.838564,33.63897
+144,4 Thompson Ct,Irvine,CA,92617,United States,-117.83902,33.640777
+145,6 Blake Ct,Irvine,CA,92617,United States,-117.841998,33.64045
+146,4 Fuertes,Irvine,CA,92617,United States,-117.834966,33.639988
+147,71 Whitman Ct,Irvine,CA,92617,United States,-117.838099,33.636933
+148,7 Russell Ct,Irvine,CA,92617,United States,-117.839342,33.641117
+149,1 Owen Ct,Irvine,CA,92617,United States,-117.838744,33.638885
+150,24 Young,Irvine,CA,92617,United States,-117.841322,33.637196
+151,5 Twain,Irvine,CA,92617,United States,-117.835556,33.640091
+152,10 Murasaki St,Irvine,CA,92617,United States,-117.835004,33.64086
+153,26 Harvey Ct,Irvine,CA,92617,United States,-117.841912,33.636553
+154,4 Blake Ct,Irvine,CA,92617,United States,-117.841911,33.640422
+155,10 Gibbs Ct,Irvine,CA,92617,United States,-117.842954,33.638206
+156,12 Thompson Ct,Irvine,CA,92617,United States,-117.839743,33.640742
+157,28 Los Trancos Dr,Irvine,CA,92617,United States,-117.842983,33.63734
+158,68 Whitman Ct,Irvine,CA,92617,United States,-117.83839,33.637045
+159,8 Twain,Irvine,CA,92617,United States,-117.835274,33.639719
+160,101 Gabrielino Dr,Irvine,CA,92617,United States,-117.83714,33.642093
+161,8 Gibbs Ct,Irvine,CA,92617,United States,-117.843134,33.63823
+162,135 Schubert Ct,Irvine,CA,92617,United States,-117.8399,33.64188
+163,2 Thompson Ct,Irvine,CA,92617,United States,-117.838862,33.640794
+164,18 Gibbs Ct,Irvine,CA,92617,United States,-117.84234,33.637867
+165,15 Frost,Irvine,CA,92617,United States,-117.834724,33.638834
+166,16 Whistler Ct,Irvine,CA,92617,United States,-117.840816,33.635187
+167,17 Whitman Ct,Irvine,CA,92617,United States,-117.840915,33.636625
+168,519 E Peltason Dr,Irvine,CA,92617,United States,-117.83756,33.643905
+169,75 Whitman Ct,Irvine,CA,92617,United States,-117.838016,33.636455
+170,8 Russell Ct,Irvine,CA,92617,United States,-117.839073,33.641545
+171,4 Dickens Ct,Irvine,CA,92617,United States,-117.843157,33.639449
+172,10 Zola Ct,Irvine,CA,92617,United States,-117.83732,33.638056
+173,69 Whitman Ct,Irvine,CA,92617,United States,-117.83834,33.63708
+174,10 Frost,Irvine,CA,92617,United States,-117.8349,33.63928
+175,22 Mendel Ct,Irvine,CA,92617,United States,-117.84002,33.639797
+176,9 Virgil Ct,Irvine,CA,92617,United States,-117.837609,33.638315
+177,3 Russell Ct,Irvine,CA,92617,United States,-117.838971,33.641108
+178,14 Harvey Ct,Irvine,CA,92617,United States,-117.842815,33.636936
+179,12 Murasaki St,Irvine,CA,92617,United States,-117.834905,33.64074
+180,2 Murasaki St,Irvine,CA,92617,United States,-117.835704,33.641201
+181,2 Dickens Ct,Irvine,CA,92617,United States,-117.843029,33.639353
+182,14 Zola Ct,Irvine,CA,92617,United States,-117.837047,33.638152
+183,22 Newton Ct,Irvine,CA,92617,United States,-117.839406,33.638907
+184,4 Murasaki St,Irvine,CA,92617,United States,-117.835518,33.641137
+185,22 Harvey Ct,Irvine,CA,92617,United States,-117.842143,33.636768
+186,2 Virgil Ct,Irvine,CA,92617,United States,-117.838488,33.638182
+187,39 Gabrielino Dr,Irvine,CA,92617,United States,-117.83583,33.64008
+188,8 Dickens Ct,Irvine,CA,92617,United States,-117.8434,33.639658
+189,18 Harvey Ct,Irvine,CA,92617,United States,-117.842437,33.636907
+190,22 Russell Ct,Irvine,CA,92617,United States,-117.840118,33.64124
+191,20 Whistler Ct,Irvine,CA,92617,United States,-117.840815,33.635635
+192,101 Schubert Ct,Irvine,CA,92617,United States,-117.83931,33.64232
+193,201 Gabrielino Dr,Irvine,CA,92617,United States,-117.836805,33.642016
+194,75 Schubert Ct,Irvine,CA,92617,United States,-117.83903,33.642266
+195,16 Gibbs Ct,Irvine,CA,92617,United States,-117.84239,33.638035
+196,27 Murasaki St,Irvine,CA,92617,United States,-117.833809,33.639793
+197,2 Schubert Ct,Irvine,CA,92617,United States,-117.83836,33.64092
+198,32 Harvey Ct,Irvine,CA,92617,United States,-117.84222,33.635777
+199,117 Schubert Ct,Irvine,CA,92617,United States,-117.83987,33.64208
+200,6 Owen Ct,Irvine,CA,92617,United States,-117.838779,33.639355
+201,20 Curie Ct,Irvine,CA,92617,United States,-117.841644,33.639324
+202,4 Twain,Irvine,CA,92617,United States,-117.835103,33.640258
+203,9 Alcott Ct,Irvine,CA,92617,United States,-117.84147,33.64023
+204,22 Alcott Ct,Irvine,CA,92617,United States,-117.841303,33.639586
+205,16 Curie Ct,Irvine,CA,92617,United States,-117.842038,33.639456
+206,9 Frost,Irvine,CA,92617,United States,-117.835101,33.638915
+207,133 Schubert Ct,Irvine,CA,92617,United States,-117.83991,33.64192
+208,119 Schubert Ct,Irvine,CA,92617,United States,-117.83982,33.64222
+209,97 Schubert Ct,Irvine,CA,92617,United States,-117.83939,33.64233
+210,74 Whitman Ct,Irvine,CA,92617,United States,-117.83789,33.6367
+211,14 Virgil Ct,Irvine,CA,92617,United States,-117.837814,33.638665
+212,115 Schubert Ct,Irvine,CA,92617,United States,-117.83976,33.64228
+213,11 Zola Ct,Irvine,CA,92617,United States,-117.837042,33.637723
+214,87 Schubert Ct,Irvine,CA,92617,United States,-117.83897,33.64228
+215,137 Schubert Ct,Irvine,CA,92617,United States,-117.8399,33.64184
+216,22 Dickens Ct,Irvine,CA,92617,United States,-117.841902,33.638684
+217,41 Gabrielino Dr,Irvine,CA,92617,United States,-117.83581,33.64005
+218,95 Schubert Ct,Irvine,CA,92617,United States,-117.838187,33.641736
+219,23 Harvey Ct,Irvine,CA,92617,United States,-117.84237,33.636444
+220,8 Perkins Ct,Irvine,CA,92617,United States,-117.838549,33.640193
+221,16 Fuertes,Irvine,CA,92617,United States,-117.83402,33.63955
+222,83 Schubert Ct,Irvine,CA,92617,United States,-117.83909,33.64231
+223,20 Harvey Ct,Irvine,CA,92617,United States,-117.842308,33.636867
+224,14 Perkins Ct,Irvine,CA,92617,United States,-117.839071,33.640254
+225,5 Virgil Ct,Irvine,CA,92617,United States,-117.837878,33.638216
+226,8 Whistler Ct,Irvine,CA,92617,United States,-117.840259,33.635058
+227,18 Mendel Ct,Irvine,CA,92617,United States,-117.840448,33.639762
+228,35 Gabrielino Dr,Irvine,CA,92617,United States,-117.835822,33.640086
+229,89 Schubert Ct,Irvine,CA,92617,United States,-117.8389,33.64227
+230,14 Fuertes,Irvine,CA,92617,United States,-117.834124,33.639679
+231,72 Whitman Ct,Irvine,CA,92617,United States,-117.83805,33.636885
+232,2 Russell Ct,Irvine,CA,92617,United States,-117.838527,33.641443
+233,51 Schubert Ct,Irvine,CA,92617,United States,-117.837792,33.642053
+234,16 Alcott Ct,Irvine,CA,92617,United States,-117.841048,33.639798
+235,2 Alcott Ct,Irvine,CA,92617,United States,-117.841251,33.640317
+236,6 Thompson Ct,Irvine,CA,92617,United States,-117.839193,33.640761
+237,8 Murasaki St,Irvine,CA,92617,United States,-117.835175,33.640967
+238,24 Los Trancos Dr,Irvine,CA,92617,United States,-117.843085,33.637724
+239,5 Fuertes,Irvine,CA,92617,United States,-117.835112,33.639601
+240,16 Dickens Ct,Irvine,CA,92617,United States,-117.842336,33.63901
+241,16 Newton Ct,Irvine,CA,92617,United States,-117.839707,33.639046
+242,16 Thompson Ct,Irvine,CA,92617,United States,-117.839881,33.64045
+243,18 Newton Ct,Irvine,CA,92617,United States,-117.839488,33.639012
+244,12 Russell Ct,Irvine,CA,92617,United States,-117.839439,33.64155
+245,5 Gabrielino Dr,Irvine,CA,92617,United States,-117.83664,33.63982
+246,801 Gabrielino Dr,Irvine,CA,92617,United States,-117.836331,33.641582
+247,18 Thompson Ct,Irvine,CA,92617,United States,-117.839788,33.640305
+248,9 Owen Ct,Irvine,CA,92617,United States,-117.838079,33.639145
+249,18 Frost,Irvine,CA,92617,United States,-117.834233,33.63902
+250,42 Schubert Ct,Irvine,CA,92617,United States,-117.838244,33.641626
+251,901 Gabrielino Dr,Irvine,CA,92617,United States,-117.836109,33.641792
+252,12 Whistler Ct,Irvine,CA,92617,United States,-117.840494,33.63522
+253,2 Zola Ct,Irvine,CA,92617,United States,-117.837647,33.637624
+254,401 Gabrielino Dr,Irvine,CA,92617,United States,-117.836797,33.64177
+255,53 Schubert Ct,Irvine,CA,92617,United States,-117.837865,33.642061
+256,2 Blake Ct,Irvine,CA,92617,United States,-117.841829,33.640435
+257,16 Virgil Ct,Irvine,CA,92617,United States,-117.837688,33.638719
+258,40 Urey Ct,Irvine,CA,92617,United States,-117.83674,33.637342
+259,107 Schubert Ct,Irvine,CA,92617,United States,-117.839774,33.642205
+260,10 Blake Ct,Irvine,CA,92617,United States,-117.842318,33.640452
+261,17 Dickens Ct,Irvine,CA,92617,United States,-117.842585,33.638645
+262,14 McClintock Ct,Irvine,CA,92617,United States,-117.841088,33.634504
+263,12 Zola Ct,Irvine,CA,92617,United States,-117.83717,33.638096
+264,10 Dickens Ct,Irvine,CA,92617,United States,-117.843579,33.639691
+265,26 Russell Ct,Irvine,CA,92617,United States,-117.840069,33.640954
+266,7 Whistler Ct,Irvine,CA,92617,United States,-117.839833,33.635449
+267,12 Alcott Ct,Irvine,CA,92617,United States,-117.841029,33.639937
+268,105 Schubert Ct,Irvine,CA,92617,United States,-117.83926,33.64231
+269,30 Urey Ct,Irvine,CA,92617,United States,-117.837317,33.636928
+270,7 Twain,Irvine,CA,92617,United States,-117.835674,33.63988
+271,26 Perkins Ct,Irvine,CA,92617,United States,-117.838955,33.639728
+272,49 Schubert Ct,Irvine,CA,92617,United States,-117.837733,33.641852
+273,20 Mendel Ct,Irvine,CA,92617,United States,-117.840248,33.639844
+274,3 Virgil Ct,Irvine,CA,92617,United States,-117.837981,33.638115
+275,601 Gabrielino Dr,Irvine,CA,92617,United States,-117.836865,33.641516
+276,1001 Gabrielino Dr,Irvine,CA,92617,United States,-117.836304,33.641991
+277,10 Alcott Ct,Irvine,CA,92617,United States,-117.841019,33.639983
+278,20 Gibbs Ct,Irvine,CA,92617,United States,-117.842433,33.637674
+279,15 Whitman Ct,Irvine,CA,92617,United States,-117.84068,33.636775
+280,18 Curie Ct,Irvine,CA,92617,United States,-117.841843,33.63942
+281,701 Gabrielino Dr,Irvine,CA,92617,United States,-117.836618,33.641555
+282,1 Dickens Ct,Irvine,CA,92617,United States,-117.843223,33.638929
+283,9 Russell Ct,Irvine,CA,92617,United States,-117.839525,33.641113
+284,4 Owen Ct,Irvine,CA,92617,United States,-117.838931,33.639285
+285,91 Schubert Ct,Irvine,CA,92617,United States,-117.839411,33.642391
+286,9 Gibbs Ct,Irvine,CA,92617,United States,-117.843946,33.638749
+287,24 Murasaki St,Irvine,CA,92617,United States,-117.833831,33.640206
+288,26 Gabrielino Dr,Irvine,CA,92617,United States,-117.836281,33.640402
+289,10 Perkins Ct,Irvine,CA,92617,United States,-117.838715,33.640214
+290,18 Whistler Ct,Irvine,CA,92617,United States,-117.840966,33.635538
+291,22 Gibbs Ct,Irvine,CA,92617,United States,-117.842617,33.637585
+292,9 Dickens Ct,Irvine,CA,92617,United States,-117.843779,33.639323
+293,24 Whistler Ct,Irvine,CA,92617,United States,-117.840505,33.63571
+294,3 Zola Ct,Irvine,CA,92617,United States,-117.837444,33.637312
+295,12 Newton Ct,Irvine,CA,92617,United States,-117.839888,33.639061
+296,18 McClintock Ct,Irvine,CA,92617,United States,-117.840923,33.634539
+297,7 Zola Ct,Irvine,CA,92617,United States,-117.837199,33.637473
+298,7 Murasaki St,Irvine,CA,92617,United States,-117.835724,33.640785
+299,11 Frost,Irvine,CA,92617,United States,-117.834895,33.638899
+300,22 Murasaki St,Irvine,CA,92617,United States,-117.834067,33.640315
+301,16 Perkins Ct,Irvine,CA,92617,United States,-117.839277,33.640223
+302,123 Schubert Ct,Irvine,CA,92617,United States,-117.83993,33.64214
+303,1101 Gabrielino Dr,Irvine,CA,92617,United States,-117.836481,33.642165
+304,28 Harvey Ct,Irvine,CA,92617,United States,-117.841804,33.636441
+305,81 Whitman Ct,Irvine,CA,92617,United States,-117.83833,33.63628
+306,26 Mendel Ct,Irvine,CA,92617,United States,-117.839876,33.639462
+307,6 Zola Ct,Irvine,CA,92617,United States,-117.837613,33.637931
+308,8 Curie Ct,Irvine,CA,92617,United States,-117.843089,33.640131
+309,14 Blake Ct,Irvine,CA,92617,United States,-117.842437,33.640431
+310,24 Newton Ct,Irvine,CA,92617,United States,-117.839346,33.638864
+311,37 Gabrielino Dr,Irvine,CA,92617,United States,-117.83584,33.64011
+312,7 Alcott Ct,Irvine,CA,92617,United States,-117.841761,33.639768
+313,4 Russell Ct,Irvine,CA,92617,United States,-117.838693,33.641465
+314,11 Russell Ct,Irvine,CA,92617,United States,-117.839692,33.64109
+315,15 Fuertes,Irvine,CA,92617,United States,-117.834286,33.639321
+316,6 Murasaki St,Irvine,CA,92617,United States,-117.835322,33.64106
+317,12 Virgil Ct,Irvine,CA,92617,United States,-117.838104,33.638569
+318,16 Russell Ct,Irvine,CA,92617,United States,-117.839785,33.641546
+319,70 Whitman Ct,Irvine,CA,92617,United States,-117.838345,33.63705
+320,14 Curie Ct,Irvine,CA,92617,United States,-117.842219,33.639514
+321,6 Urey Ct,Irvine,CA,92617,United States,-117.839416,33.638206
+322,10 Owen Ct,Irvine,CA,92617,United States,-117.838462,33.63946
+323,3 Dickens Ct,Irvine,CA,92617,United States,-117.843355,33.639022
+324,5 Russell Ct,Irvine,CA,92617,United States,-117.839161,33.641117
+325,20 Dickens Ct,Irvine,CA,92617,United States,-117.842021,33.638809
+326,20 Russell Ct,Irvine,CA,92617,United States,-117.840114,33.641411
+327,15 Dickens Ct,Irvine,CA,92617,United States,-117.842748,33.63871
+328,4 Urey Ct,Irvine,CA,92617,United States,-117.83923,33.638248
+329,63 Schubert Ct,Irvine,CA,92617,United States,-117.838992,33.642215
+330,20 Murasaki St,Irvine,CA,92617,United States,-117.83426,33.64038
+331,25 Murasaki St,Irvine,CA,92617,United States,-117.833991,33.639863
+332,10 Virgil Ct,Irvine,CA,92617,United States,-117.837949,33.638611
+333,9 Fuertes,Irvine,CA,92617,United States,-117.834772,33.639492
+334,46 Schubert Ct,Irvine,CA,92617,United States,-117.838189,33.64174
+335,28 Perkins Ct,Irvine,CA,92617,United States,-117.838788,33.639782
+336,6 Russell Ct,Irvine,CA,92617,United States,-117.838888,33.641507
+337,14 Alcott Ct,Irvine,CA,92617,United States,-117.84105,33.639865
+338,15 Owen Ct,Irvine,CA,92617,United States,-117.837781,33.639252
+339,8 Frost,Irvine,CA,92617,United States,-117.83512,33.63931
+340,2 Fuertes,Irvine,CA,92617,United States,-117.835152,33.640069
+341,12 Gibbs Ct,Irvine,CA,92617,United States,-117.842775,33.638153
+342,129 Schubert Ct,Irvine,CA,92617,United States,-117.83982,33.64185
+343,30 Los Trancos Dr,Irvine,CA,92617,United States,-117.843127,33.637169
+344,8 Fuertes,Irvine,CA,92617,United States,-117.834655,33.639855
+345,18 Handel Ct,Irvine,CA,92617,United States,-117.841344,33.635279
+346,4 Zola Ct,Irvine,CA,92617,United States,-117.837706,33.63779
+347,16 Murasaki St,Irvine,CA,92617,United States,-117.834605,33.640545
+348,12 Eliot Ct,Irvine,CA,92617,United States,-117.842004,33.635446
+349,8 Zola Ct,Irvine,CA,92617,United States,-117.837461,33.638006
+350,8 Alcott Ct,Irvine,CA,92617,United States,-117.841101,33.640157
+351,525 E Peltason Dr,Irvine,CA,92617,United States,-117.837851,33.644117
+352,11 Owen Ct,Irvine,CA,92617,United States,-117.837934,33.639187
+353,32 Twain,Irvine,CA,92617,United States,-117.834913,33.638642
