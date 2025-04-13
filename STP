@@ -1,0 +1,221 @@
+#include <algorithm>
+#include <cassert>
+#include <cmath>
+#include <cfloat>
+#include <fstream>
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <unordered_map>
+#include <vector>
+#include <limits>
+#include <set>
+#include <random>
+#include <tuple>
+
+using namespace std;
+constexpr double EARTH_RADIUS = 3959.0;
+struct Record { string id; double lat, lon; };
+inline double deg2rad(double deg) { return deg * M_PI / 180.0; }
+inline double clamp_val(double x) { return max(-1.0, min(1.0, x)); }
+double distance_between_coordinates(double lat1, double lon1, double lat2, double lon2) {
+    double rlat1 = deg2rad(lat1), rlon1 = deg2rad(lon1);
+    double rlat2 = deg2rad(lat2), rlon2 = deg2rad(lon2);
+    double arg = clamp_val(sin(rlat1) * sin(rlat2) + cos(rlat1) * cos(rlat2) * cos(rlon2 - rlon1));
+    return EARTH_RADIUS * acos(arg);
+}
+pair<double, vector<int>> heldKarp(const vector<vector<double>> &dist, int t, int s) {
+    int n = dist.size(), N = 1 << n;
+    vector<vector<pair<double,int>>> dp(N, vector<pair<double,int>>(n, {DBL_MAX, -1}));
+    dp[1 << t][t] = {0.0, -1};
+    for (int mask = 0; mask < N; mask++) {
+        if (!(mask & (1 << t))) continue;
+        for (int j = 0; j < n; j++) {
+            if (!(mask & (1 << j))) continue;
+            for (int k = 0; k < n; k++) {
+                if (mask & (1 << k)) continue;
+                int nextMask = mask | (1 << k);
+                double newCost = dp[mask][j].first + dist[j][k];
+                if (newCost < dp[nextMask][k].first) dp[nextMask][k] = {newCost, j};
+            }
+        }
+    }
+    int fullMask = N - 1;
+    if (dp[fullMask][s].first == DBL_MAX) return {DBL_MAX, {}};
+    double best_cost = dp[fullMask][s].first;
+    vector<int> path; int cur = s, mask = fullMask;
+    while (cur != -1) { path.push_back(cur); int prev = dp[mask][cur].second; mask ^= (1 << cur); cur = prev; }
+    reverse(path.begin(), path.end());
+    return {best_cost, path};
+}
+pair<double, vector<int>> heldKarpCycle(const vector<vector<double>> &dist, int start) {
+    int n = dist.size(), N = 1 << n;
+    vector<vector<pair<double,int>>> dp(N, vector<pair<double,int>>(n, {DBL_MAX, -1}));
+    dp[1 << start][start] = {0.0, -1};
+    for (int mask = 0; mask < N; mask++) {
+        if (!(mask & (1 << start))) continue;
+        for (int j = 0; j < n; j++) {
+            if (!(mask & (1 << j))) continue;
+            for (int k = 0; k < n; k++) {
+                if (mask & (1 << k)) continue;
+                int nextMask = mask | (1 << k);
+                double newCost = dp[mask][j].first + dist[j][k];
+                if (newCost < dp[nextMask][k].first) dp[nextMask][k] = {newCost, j};
+            }
+        }
+    }
+    int fullMask = N - 1; double best_cost = DBL_MAX; int best_end = -1;
+    for (int i = 0; i < n; i++) {
+        if (i == start) continue;
+        double cost = dp[fullMask][i].first + dist[i][start];
+        if (cost < best_cost) { best_cost = cost; best_end = i; }
+    }
+    if (best_end == -1) return {DBL_MAX, {}};
+    vector<int> path; int mask = fullMask, cur = best_end;
+    while (cur != -1) { path.push_back(cur); int prev = dp[mask][cur].second; mask ^= (1 << cur); cur = prev; }
+    reverse(path.begin(), path.end());
+    path.push_back(start);
+    return {best_cost, path};
+}
+pair<vector<int>, vector<pair<double,double>>> kMeansClustering(const vector<pair<double,double>> &points, int k, int iterations=100) {
+    int n = points.size();
+    vector<pair<double,double>> centers; vector<int> labels(n, 0);
+    random_device rd; mt19937 gen(rd()); uniform_int_distribution<> dis(0, n-1);
+    for (int i = 0; i < k; i++) centers.push_back(points[dis(gen)]);
+    for (int iter = 0; iter < iterations; iter++) {
+        for (int i = 0; i < n; i++) {
+            double bestDist = DBL_MAX; int bestLabel = 0;
+            for (int j = 0; j < k; j++) {
+                double d = distance_between_coordinates(points[i].first, points[i].second, centers[j].first, centers[j].second);
+                if (d < bestDist) { bestDist = d; bestLabel = j; }
+            }
+            labels[i] = bestLabel;
+        }
+        vector<double> sumLat(k, 0.0), sumLon(k, 0.0); vector<int> count(k, 0);
+        for (int i = 0; i < n; i++) { sumLat[labels[i]] += points[i].first; sumLon[labels[i]] += points[i].second; count[labels[i]]++; }
+        for (int j = 0; j < k; j++) if (count[j] > 0) centers[j] = {sumLat[j] / count[j], sumLon[j] / count[j]};
+    }
+    return {labels, centers};
+}
+vector<vector<string>> balancedClustering(const vector<Record>& data, int max_cluster_size) {
+    int n = data.size(), k = (int)ceil((double)n / max_cluster_size);
+    vector<pair<double,double>> coords; vector<string> ids;
+    for (auto &rec : data) { coords.push_back({rec.lat, rec.lon}); ids.push_back(rec.id); }
+    auto km = kMeansClustering(coords, k);
+    vector<int> labels = km.first; vector<vector<string>> clusters(k);
+    for (int i = 0; i < n; i++) clusters[labels[i]].push_back(ids[i]);
+    vector<tuple<double,int,int>> cands;
+    for (int i = 0; i < n; i++) for (int j = 0; j < k; j++) {
+        double d = distance_between_coordinates(coords[i].first, coords[i].second, km.second[j].first, km.second[j].second);
+        cands.push_back(make_tuple(d, i, j));
+    }
+    sort(cands.begin(), cands.end(), [](auto a, auto b) { return get<0>(a) < get<0>(b); });
+    vector<int> assigned(n, -1), counts(k, 0);
+    for (auto &cand : cands) {
+        int i = get<1>(cand), j = get<2>(cand);
+        if (assigned[i] == -1 && counts[j] < max_cluster_size) { assigned[i] = j; counts[j]++; }
+        bool allAssigned = true; for (int a : assigned) { if (a == -1) { allAssigned = false; break; } }
+        if (allAssigned) break;
+    }
+    vector<vector<string>> finalClusters(k);
+    for (int i = 0; i < n; i++) finalClusters[assigned[i]].push_back(ids[i]);
+    return finalClusters;
+}
+vector<Record> readCSV(const string &filename) {
+    vector<Record> data; ifstream fin(filename);
+    if (!fin) { cerr << "Cannot open " << filename << "\n"; return data; }
+    string line; getline(fin, line);
+    while(getline(fin, line)) {
+        stringstream ss(line); vector<string> tokens; string token;
+        while(getline(ss, token, ',')) tokens.push_back(token);
+        if(tokens.size() >= 8) { Record rec; rec.id = tokens[0]; rec.lat = stod(tokens[6]); rec.lon = stod(tokens[7]); data.push_back(rec); }
+    }
+    return data;
+}
+pair<double, vector<string>> CombineTheAlgorithms(const vector<Record>& data, int max_cluster_sizeA) {
+    unordered_map<string, pair<double,double>> idToCoord;
+    for (auto &rec : data) idToCoord[rec.id] = {rec.lat, rec.lon};
+    auto clusters = balancedClustering(data, max_cluster_sizeA);
+    int startCluster = -1;
+    for (int i = 0; i < clusters.size(); i++) {
+        for (auto &rid : clusters[i]) { if (rid == "1") { startCluster = i; break; } }
+        if (startCluster != -1) break;
+    }
+    if (startCluster == -1) startCluster = 0;
+    vector<vector<string>> newClusters; newClusters.push_back(clusters[startCluster]);
+    for (int i = 0; i < clusters.size(); i++) if(i != startCluster) newClusters.push_back(clusters[i]);
+    int nClusters = newClusters.size();
+    vector<vector<double>> additionalGraph(nClusters, vector<double>(nClusters, DBL_MAX));
+    vector<vector<pair<string,string>>> intersection(nClusters, vector<pair<string,string>>(nClusters, {"", ""}));
+    for (int i = 0; i < nClusters; i++) {
+        for (int j = 0; j < nClusters; j++) {
+            if (i == j) { additionalGraph[i][j] = 0; continue; }
+            double minDist = DBL_MAX; pair<string,string> bestPair = {"", ""};
+            for (auto &r1 : newClusters[i]) {
+                for (auto &r2 : newClusters[j]) {
+                    double d = distance_between_coordinates(idToCoord[r1].first, idToCoord[r1].second,
+                                                            idToCoord[r2].first, idToCoord[r2].second);
+                    if (d < minDist) { minDist = d; bestPair = {r1, r2}; }
+                }
+            }
+            additionalGraph[i][j] = minDist;
+            intersection[i][j] = bestPair;
+        }
+    }
+    auto clusterCycle = heldKarpCycle(additionalGraph, 0);
+    vector<int> clusterOrder = clusterCycle.second;
+    if (!clusterOrder.empty() && clusterOrder.back() == 0) clusterOrder.pop_back();
+    vector<string> finalRoute;
+    for (int idx = 0; idx < clusterOrder.size(); idx++) {
+        int cIdx = clusterOrder[idx];
+        const auto &clusterRecs = newClusters[cIdx];
+        int m = clusterRecs.size(); if (!m) continue;
+        vector<vector<double>> clusterDist(m, vector<double>(m, 0.0));
+        for (int a = 0; a < m; a++) for (int b = 0; b < m; b++) {
+            if (a == b) clusterDist[a][b] = 0;
+            else clusterDist[a][b] = distance_between_coordinates(idToCoord[clusterRecs[a]].first, idToCoord[clusterRecs[a]].second, idToCoord[clusterRecs[b]].first, idToCoord[clusterRecs[b]].second);
+        }
+
+        int startIdx = 0, endIdx = 0;
+        if (cIdx == 0) {
+            auto it = find(clusterRecs.begin(), clusterRecs.end(), "1");
+            if (it != clusterRecs.end()) startIdx = distance(clusterRecs.begin(), it);
+            endIdx = startIdx;
+        } else {
+            int prevCluster = clusterOrder[idx - 1];
+            string entryRec = intersection[prevCluster][cIdx].second;
+            auto it = find(clusterRecs.begin(), clusterRecs.end(), entryRec);
+            startIdx = (it != clusterRecs.end() ? distance(clusterRecs.begin(), it) : 0);
+            if (idx < clusterOrder.size() - 1) {
+                int nextCluster = clusterOrder[idx + 1];
+                string exitRec = intersection[cIdx][nextCluster].first;
+                auto it2 = find(clusterRecs.begin(), clusterRecs.end(), exitRec);
+                endIdx = (it2 != clusterRecs.end() ? distance(clusterRecs.begin(), it2) : startIdx);
+            } else { endIdx = startIdx; }
+        }
+        pair<double, vector<int>> clusterTSP;
+        if (m > 1 && startIdx == endIdx) clusterTSP = heldKarpCycle(clusterDist, startIdx);
+        else clusterTSP = heldKarp(clusterDist, startIdx, endIdx);
+        vector<int> intraOrder = clusterTSP.second;
+        for (int index : intraOrder) finalRoute.push_back(clusterRecs[index]);
+    }
+    finalRoute.push_back("1");
+    double totalCost = 0;
+    for (int i = 0; i < finalRoute.size() - 1; i++) {
+        auto p1 = idToCoord[finalRoute[i]], p2 = idToCoord[finalRoute[i + 1]];
+        totalCost += distance_between_coordinates(p1.first, p1.second, p2.first, p2.second);
+    }
+    return {totalCost, finalRoute};
+}
+int main(){
+    auto data = readCSV("geocode_full.txt");
+    if (data.empty()){ cerr << "No data loaded.\n"; return 1; }
+    auto result = CombineTheAlgorithms(data, 19);
+    double totalCost = result.first; vector<string> route = result.second;
+    set<string> s;
+    cout << "Total PST cycle cost: " << totalCost << "\n";
+    cout << "Final route (record IDs in order):\n";
+    for (auto &r : route){ s.insert(r); cout << r << " "; }
+    cout << "\nUnique records in route: " << s.size() << "\n";
+    return 0;
+}
