@@ -1,0 +1,73 @@
+---
+title: "Data Wrangling"
+author: "Franzgerard Clarin"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Read Data
+
+```{r read_data}
+library(readr)
+
+addresses_df <- read_csv("DatathonUCI_Addresses.csv")
+
+head(addresses_df)
+```
+
+### Exploratory Data Analysis
+
+```{r df_summary}
+summary(addresses_df)
+
+unique(addresses_df$City)
+unique(addresses_df$State)
+unique(addresses_df$Zip)
+
+head(addresses_df$Address, 10)
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+# Clean, summarize, and plot
+addresses_df %>% 
+  mutate(
+    AddressParts = strsplit(Address, " "),
+    Streetnum = sapply(AddressParts, function(x) x[1]),
+    Street = sapply(AddressParts, function(x) paste(x[-1], collapse = " "))
+  ) %>% 
+  select(-AddressParts) %>% 
+  group_by(Street) %>% 
+  summarise(count = n()) %>% 
+  arrange(desc(count)) %>% 
+  slice_head(n = 5) %>%  # Get top 5
+  ggplot(aes(x = reorder(Street, count), y = count)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  coord_flip() +
+  labs(title = "Top 5 Most Frequent Streets Visited",
+       x = "Street",
+       y = "Number of Addresses") +
+  theme_minimal()
+```
+
+## Write Data
+
+Write new dataset with extracted columns
+
+```{r}
+write_csv(addresses_df %>% 
+  mutate(
+    AddressParts = strsplit(Address, " "),
+    Streetnum = sapply(AddressParts, function(x) x[1]),
+    Street = sapply(AddressParts, function(x) paste(x[-1], collapse = " "))
+  ) %>% 
+  select(-AddressParts), 'addresses_df.csv')
+```
+
+
